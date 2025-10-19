@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; // ADD useState IMPORT
+import React, { useState } from 'react'; 
 import { ScrollView } from 'react-native';
 import { styles } from './src/styles/styles';
 import AboutMe from './src/components/custom/AboutMe';
