@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text,View } from '../ui';
+import { Text,View } from 'react-native';
 import { styles } from '../../styles/styles';
 
 const TeacherMessage = () => {
