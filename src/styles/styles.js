@@ -72,7 +72,38 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   
+ buttonContainer: {
+  flexDirection: 'row',
+  gap: 12,
+  flex: 2,
+  justifyContent: 'flex-end',
+},
 
+incrementButton: {
+  backgroundColor: '#10b981',
+  paddingVertical: 10,
+  paddingHorizontal: 20,
+  borderRadius: 8,
+  minWidth: 60,
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+
+decrementButton: {
+  backgroundColor: '#ef4444',
+  paddingVertical: 10,
+  paddingHorizontal: 20,
+  borderRadius: 8,
+  minWidth: 60,
+  alignItems: 'center',
+  justifyContent: 'center',
+},
+
+buttonText: {
+  color: 'white',
+  fontWeight: 'bold',
+  fontSize: 18,
+},
   // Item row styles
   itemRow: {
     flexDirection: 'row',
