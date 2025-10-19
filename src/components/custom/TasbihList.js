@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import {View, Text, TextInput, Button,FlatList} from '../ui'; // You may switch Text to ui/Text later
+import {TextInput, Button} from '../ui';
 import { styles } from '../../styles/styles';
+import { View, FlatList, Text, TouchableOpacity ,Pressable } from 'react-native'; 
 import { initialAzkaar } from '../../data/azkaar';
 
 /**
@@ -30,10 +31,20 @@ export default function TasbihList({ items, setItems }) {
       <Text style={styles.itemName}>{item.phrase}</Text>
       <Text style={styles.counter}>{item.count}</Text>
       {/* TODO: Add increment/decrement buttons here using ui/Button */}
-       <View style={styles.buttonContainer}>
-        <Button title="+" onPress={() => increment(item.id)} />
-        <Button title="-" onPress={() => decrement(item.id)} />
-      </View>
+      <View style={styles.buttonContainer}>
+  <Pressable 
+    style={styles.incrementButton}
+    onPress={() => increment(item.id)}
+  >
+    <Text style={styles.buttonText}>+</Text>
+  </Pressable>
+  <Pressable 
+    style={styles.decrementButton}
+    onPress={() => decrement(item.id)}
+  >
+    <Text style={styles.buttonText}>-</Text>
+  </Pressable>
+</View>
     </View>
   );
 
