@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {View, Text, TextInput, Button,FlatList} from '../ui'
+import { View, Text, TextInput, Button, FlatList } from 'react-native';
 import { styles } from '../../styles/styles';
 import { initialAzkaar } from '../../data/azkaar';
 
